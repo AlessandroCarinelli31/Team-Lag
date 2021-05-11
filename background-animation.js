@@ -56,6 +56,18 @@ function frame() {
         particles[i].update();
         particles[i].draw();
     }
+    
+    for(let i = 0; i < particles.length; i ++) {
+        if(particles[i].directionX == 0 && particles[i].directionY == 0) {
+          for(let j = 0; j < particles.length; j ++) {
+              context.beginPath();
+              context.moveTo(particles[i].x, particles[i].y);
+              context.lineTo(particles[j].x, particles[j].y);
+              context.strokeStyle = '#ffffff';
+              context.stroke();
+          }
+        }
+    }
 }
 
 init();
