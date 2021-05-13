@@ -6,6 +6,7 @@
 
 #canvas {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
@@ -14,7 +15,6 @@
 }
 
 #titleBox {
-    position: absolute;
     margin: auto;
     width: 100%;
     text-align: center;
@@ -24,4 +24,23 @@
     color: #fff;
     font-size: 50px;
     font-family: Times New Roman;
+}
+
+#buttons-container {
+    position: absolute;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#navBar {
+    width: 100%;
+    margin-block: auto;
+}
+
+.navLink {
+    text-align: center;
+    padding: 15px;
+    height: 15%;
+    width: 50%;
+    color: #fff;
 }
