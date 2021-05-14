@@ -4,43 +4,54 @@
     box-sizing: border-box;
 }
 
+body {
+    background: radial-gradient(#fff, #776);
+}
+
 #canvas {
-    position: absolute;
+    position: sticky;
     z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(#00a, #a0a);
+    background: radial-gradient(#fff, #776);
 }
 
 #titleBox {
+    position: static;
     margin: auto;
     width: 100%;
+    height: 10%;
     text-align: center;
 }
 
 #title {
     color: #fff;
-    font-size: 50px;
+    font-size: 70px;
     font-family: Times New Roman;
 }
 
-#buttons-container {
-    position: absolute;
+#buttonContainer {
+    position: relative;
+    margin: auto;
     width: 100%;
-    overflow-y: auto;
+    height: 90%;
 }
 
-#navBar {
-    width: 100%;
-    margin-block: auto;
-}
-
-.navLink {
+.button-box {
+    position: relative;
+    //padding: inherit;
+    //margin: auto;
+    background: #f00;
     text-align: center;
-    padding: 15px;
-    height: 15%;
-    width: 50%;
+}
+
+.button {
+    width: 20%;
+    height: 40%;
+    font-size: 30px;
+    font-family: Times New Roman;
+    font-weight: bold;
     color: #fff;
 }
